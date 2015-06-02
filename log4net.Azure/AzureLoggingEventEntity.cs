@@ -38,20 +38,20 @@ namespace log4net.Appender
                                  Guid.NewGuid().ToString().ToLower());
         }
 
-        public string UserName { get; set; }
-
         public DateTime EventTimeStamp { get; set; }
 
-        public string ThreadName { get; set; }
-
+        public string Level { get; set; }
+        
         public string Message { get; set; }
 
         public string Properties { get; set; }
 
-        public string Level { get; set; }
+        public string UserName { get; set; }
+
+        public string ThreadName { get; set; }
+
+        public string Domain { get; set; }        
 
         public string Identity { get; set; }
-
-        public string Domain { get; set; }
     }
 }
