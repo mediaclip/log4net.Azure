@@ -23,7 +23,7 @@ namespace log4net.Appender
             Properties = sb.ToString();
             Message = e.RenderedMessage + Environment.NewLine + e.GetExceptionString();
             ThreadName = e.ThreadName;
-            TimeStamp = e.TimeStamp;
+            EventTimeStamp = e.TimeStamp;
             UserName = e.UserName;
 
             PartitionKey = e.LoggerName;
@@ -40,7 +40,7 @@ namespace log4net.Appender
 
         public string UserName { get; set; }
 
-        public DateTime TimeStamp { get; set; }
+        public DateTime EventTimeStamp { get; set; }
 
         public string ThreadName { get; set; }
 
